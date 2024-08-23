@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url(./CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: 'Circular Std Black';
+    src: url(./CircularStd-Black.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Std';
+}
+
+.body{
+    background-color: white;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+}
+
+.logo{
+    font-family: "Circular Std Black";
+    font-size: 60px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    margin-left: 50px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    margin-right: 60px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 20px;;
+    transition: 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    color: rgb(255, 213, 1);
+}
+
+.about_me{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description{
+    width: 800px;
+    height: 700px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.blank{
+    flex-direction: column;
+    display: flex;
+    width: 800px;
+    height: 700px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    align-items: right;
+    text-align: right;
+    justify-content: center;
+}
+
+.blank h1{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Circular Std Black';
+}
+
+.blank h3{
+    font-size: 25px;
+}
+
+.blank p{
+    line-height: 3;
+}
